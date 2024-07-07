@@ -3,13 +3,12 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "sinhvien")
-
+@Table(name = "student")
 public class Students {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name = "ten", nullable = false, length = 50)
+    @Column(name = "name", nullable = false, length = 50)
     private String name;
     @Column(name = "email", nullable = false, length = 50)
     private String email;
